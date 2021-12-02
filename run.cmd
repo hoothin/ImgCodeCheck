@@ -1,0 +1,1 @@
+python3 deCodeImg.py -m
