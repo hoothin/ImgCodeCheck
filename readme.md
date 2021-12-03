@@ -18,4 +18,4 @@ pip3 install ddddocr
 
     Start run.cmd
     
-    Visit http://127.0.0.1:416/?img=Base64Data
+    Visit http://127.0.0.1:416/?img=
