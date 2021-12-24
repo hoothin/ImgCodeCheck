@@ -20,4 +20,4 @@ ImgCodeCheck 图片验证码识别API
     
   > Visit http://127.0.0.1:416/?img= 🔲 接口为 http://127.0.0.1:416/?img= 后面可接上去头的 base64 数据、本地图片路径或者在线图片网址
   
-用在[【邀请码助手】](https://chrome.google.com/webstore/detail/register-invitation-code/ndmlflmkmohjoechiepcpflbljadmemp)上时运行 run.cmd 启动网站后填入 http://127.0.0.1:416/?img= 即可
+用在[【邀请码助手】](https://chrome.google.com/webstore/detail/register-invitation-code/ndmlflmkmohjoechiepcpflbljadmemp)上时运行 run.cmd 启动服务后填入 http://127.0.0.1:416/?img= 即可
