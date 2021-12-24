@@ -1,4 +1,4 @@
-ImgCodeCheck
+ImgCodeCheck 图片验证码识别API
 ==========================
 
 ---
