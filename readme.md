@@ -11,7 +11,7 @@ ImgCodeCheck 图片验证码识别API
 + Usage 🔲 用法
 
   - Local 🔲 本地识别
-  > deCodeImg.py -i D:/case.jpg
+  > deCodeImg.py -i D:\case.jpg
 
   - Web api 🔲 搭建web服务识别
   > deCodeImg.py -m -p 416
