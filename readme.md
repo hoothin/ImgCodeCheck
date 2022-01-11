@@ -11,12 +11,12 @@ ImgCodeCheck 图片验证码识别API
 + Usage 🔲 用法
 
   - Local 🔲 本地识别
-  > deCodeImg.py -i imgParam
+  > deCodeImg.py -i D:/case.jpg
 
   - Web api 🔲 搭建web服务识别
-  > deCodeImg.py -m makeServer -p port
+  > deCodeImg.py -m -p 416
 
-  > Start run.cmd 🔲 运行 run.cmd，可修改 cmd 以自定义端口等
+  > Start run.cmd 🔲 或者直接运行 run.cmd，可修改 cmd 以自定义端口等
     
   > Visit http://127.0.0.1:416/?img= 🔲 接口为 http://127.0.0.1:416/?img= 后面可接上去头的 base64 数据、本地图片路径或者在线图片网址
   
