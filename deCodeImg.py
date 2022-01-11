@@ -6,8 +6,7 @@ def getImgBytes(imgParam):
     if re.match(r'^http', imgParam) != None:
         resp = request.urlopen(imgParam)
         img_bytes = bytearray(resp.read())
-        pass
-    elif re.match(r'(\.jpg|\.jpeg|\.png|\.gif)$', imgParam) != None:
+    elif re.search(r'(\.jpg|\.jpeg|\.png|\.gif)$', imgParam) != None:
         with open(imgParam, 'rb') as f:
             img_bytes = f.read()
     else:
@@ -30,7 +29,11 @@ def app(environ, start_response):
         if "action" in params.keys():
             action = params["action"][0]
         if action == "getCode":
-            return [str.encode(deCodeImg(getImgBytes(params["img"][0])))]
+            try:
+                result=deCodeImg(getImgBytes(params["img"][0]))
+            except:
+                return [b'Image data is incorrect!']
+            return [str.encode(result)]
     return [b'1']
 
 
