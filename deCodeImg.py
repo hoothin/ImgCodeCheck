@@ -59,7 +59,7 @@ def main(argv):
         elif opt in ("-p", "--port"):
             port = arg
     if makeServer == True:
-        print('--- DeCodeImg Server Started --- \nhttp://127.0.0.1:416/?img=c:/codeimg.png\nhttp://127.0.0.1:416/?img=http://a.a/codeimg.png\nhttp://127.0.0.1:416/?img=Base64 Data')
+        print('--- DeCodeImg Server Started ---\nPowered by hoothin\nhttp://127.0.0.1:416/?img=c:/codeimg.png\nhttp://127.0.0.1:416/?img=http://a.a/codeimg.png\nhttp://127.0.0.1:416/?img=Base64 Data')
         httpd = make_server('', port, app)
         httpd.serve_forever()
     elif imgParam == "":
