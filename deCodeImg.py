@@ -24,6 +24,8 @@ def app(environ, start_response):
     start_response('200 OK', [('Content-Type', 'text/html'),('Access-Control-Allow-Origin', '*')])
     if environ["PATH_INFO"] == "/":
         params = parse.parse_qs(environ["QUERY_STRING"])
+        if "img" not in params:
+            return [b'--- DeCodeImg Server Started ---<br>Powered by hoothin<br>http://127.0.0.1:416/?img=c:/codeimg.png<br>http://127.0.0.1:416/?img=http://a.a/codeimg.png<br>http://127.0.0.1:416/?img=Base64 Data']
         action = "getCode"
         if "action" in params.keys():
             action = params["action"][0]
