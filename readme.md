@@ -4,14 +4,14 @@ ImgCodeCheck 图片验证码识别API
 ---
 + Requirements 🔲 运行环境
 
-> Python3 🔲 安装Python3
+> Python 3.9.7 🔲 安装Python 3.9.7
 
-> pip3 install ddddocr 🔲 安装ddddocr识别库
+> pip3 install ddddocr==1.0.6 🔲 安装 ddddocr 识别库 1.0.6
 
 + Usage 🔲 用法
 
   - Local 🔲 本地识别
-  > deCodeImg.py -i D:\case.jpg
+  > deCodeImg.py -i D:\codeimg.png
 
   - Web api 🔲 搭建web服务识别
   > deCodeImg.py -m -p 416
