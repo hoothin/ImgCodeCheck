@@ -19,14 +19,14 @@ ImgCodeCheck 图片验证码识别API
 > Python 3.9.7 + ddddocr 1.0.6
 
 + 安装
-  - 安装 python 3
-  - 安装 ddddocr 库
+  - 安装 [python 3](https://www.python.org/downloads/)
+  - 安装 ddddocr 库：打开命令提示符，输入以下命令并回车
   > `pip3 install ddddocr==1.0.6`
 + 用法
-  - 本地识别
-  > `python3 deCodeImg.py -i D:\codeimg.png`
-
-  - 搭建web服务识别，用于邀请码助手
+  - 运行 web 识别服务器，可用于邀请码助手，方法如下
   > 双击 run.cmd 即可<br>
-  > 接口为 http://127.0.0.1:416/?img= <br>后面可接上去头的 base64 数据、本地图片路径或者在线图片网址<br>
+  > 接口默认为 http://127.0.0.1:416/?img= <br>后面可接上去头的 base64 数据、本地图片路径或者在线图片网址<br>
 用在[【邀请码助手】](https://chrome.google.com/webstore/detail/register-invitation-code/ndmlflmkmohjoechiepcpflbljadmemp)上时运行 run.cmd 启动服务后填入 http://127.0.0.1:416/?img= 即可
+
+  - 本地识别：使用以下命令可识别本地 D:\codeimg.png 里的验证码
+  > `python3 deCodeImg.py -i D:\codeimg.png`
