@@ -25,7 +25,7 @@ ImgCodeCheck 图片验证码识别API
 + 用法
   - 运行 web 识别服务器，可用于邀请码助手，方法如下
   > 双击 run.cmd 即可<br>
-  > 接口默认为 http://127.0.0.1:416/?img= <br>后面可接上去头的 base64 数据、本地图片路径或者在线图片网址<br>
+  > 接口默认为 http://127.0.0.1:416/?img= <br>后面可接上 base64 图片数据、本地图片路径或者在线图片网址（预先 encodeURIComponent）<br>
 用在[【邀请码助手】](https://chrome.google.com/webstore/detail/register-invitation-code/ndmlflmkmohjoechiepcpflbljadmemp)上时运行 run.cmd 启动服务后填入 http://127.0.0.1:416/?img= 即可
 
   - 本地识别：使用以下命令可识别本地 D:\codeimg.png 里的验证码

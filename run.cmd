@@ -1,1 +1,2 @@
-python3 deCodeImg.py -m
+python deCodeImg.py -m
+pause

@@ -10,6 +10,7 @@ def getImgBytes(imgParam):
         with open(imgParam, 'rb') as f:
             img_bytes = f.read()
     else:
+        imgParam = re.sub(r'^data:image/\w+;base64,', '', imgParam)
         img_bytes = base64.b64decode(imgParam)
         pass
     return img_bytes
