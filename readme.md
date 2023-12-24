@@ -28,5 +28,7 @@ ImgCodeCheck 图片验证码识别API
   > 接口默认为 http://127.0.0.1:416/?img= <br>后面可接上 base64 图片数据、本地图片路径或者在线图片网址（预先 encodeURIComponent）<br>
 用在[【邀请码助手】](https://chrome.google.com/webstore/detail/register-invitation-code/ndmlflmkmohjoechiepcpflbljadmemp)上时运行 run.cmd 启动服务后填入 http://127.0.0.1:416/?img= 即可
 
+  - 用于怠惰小说下载器时需要预先设置，[教程](https://afdian.net/p/c7fc3abc8e8411ee9b1852540025c377)
+
   - 本地识别：使用以下命令可识别本地 D:\codeimg.png 里的验证码
   > `python3 deCodeImg.py -i D:\codeimg.png`
